@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.card-container {
+    perspective: 1000px; 
+}
+
+.credit-card {
+    width: 350px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card-container:hover .credit-card {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+.front {
+    background: linear-gradient(135deg, #000000, #333333);
+    color: white;
+}
+
+.back {
+    background: linear-gradient(135deg, #222222, #444444);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+}
+
+.chip {
+    width: 50px;
+    filter: brightness(0.8);
+}
+
+.brand {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ccc;
+}
+
+.card-number {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 100%; 
+}
+
+.card-holder p, .expiry p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.magnetic-strip {
+    width: 100%;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 20px;
+}
+
+.signature-box {
+    width: 100%;
+    background: white;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-top: 60px;
+}
+
+.signature {
+    width: 70%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, gray, gray 2px, white 2px, white 4px);
+}
+
+.cvv {
+    background: white;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.info-text {
+    font-size: 8px;
+    text-align: left;
+    margin-top: 20px;
+    opacity: 0.7;
+    width: 100%;
+}
+
