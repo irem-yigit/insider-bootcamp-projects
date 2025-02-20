@@ -39,7 +39,8 @@ label {
 }
 
 input {
-    width: 100%;
+    width: calc(100% - 20px);
+    max-width: 280px;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
