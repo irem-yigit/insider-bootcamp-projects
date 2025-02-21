@@ -1,4 +1,3 @@
-/* Sayfa genel ayarları */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -9,7 +8,6 @@ body {
     margin: 0;
 }
 
-/* Form konteyneri */
 .container {
     background: white;
     padding: 20px;
@@ -19,13 +17,11 @@ body {
     text-align: center;
 }
 
-/* Başlık */
 h2 {
     margin-bottom: 20px;
     color: #333;
 }
 
-/* Form elemanları */
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -47,7 +43,6 @@ input {
     font-size: 14px;
 }
 
-/* Sign Up butonu */
 .btn {
     background-color: #007bff;
     color: white;
