@@ -9,7 +9,6 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -77,6 +76,8 @@ header {
 
 .menu.active {
     display: flex;
+    opacity: 1;
+    visibility: visible;
     
 }
 
@@ -192,7 +193,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     padding: 8px;
     text-align: left;
 }
