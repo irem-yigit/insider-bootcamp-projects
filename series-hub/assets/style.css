@@ -1,0 +1,229 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* Hamburger Menü */
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobil Menü */
+.menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .menu li {
+        margin: 0;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+.menu.active {
+    display: flex;
+    
+}
+
+nav {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav .menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav .menu li {
+    margin-left: 1rem;
+}
+
+.nav .menu a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav .menu a:hover {
+    color: #ccc;
+}
+
+.nav .profile {
+    margin-left: auto; 
+}
+
+.nav .profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/fleabag-poster.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.characters, .episodes, .favorite-scene {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.characters h2, .episodes h2, .favorite-scene h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.character-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.character {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#favorite-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s, transform 0.2s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#favorite-button.favorited {
+    background-color: red;
+    color: white;
+    transform: scale(1.2);
+}
+
+
+
