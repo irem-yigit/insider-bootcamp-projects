@@ -82,14 +82,10 @@ header {
         display: block;
     }
 
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .social-icons a {
-        margin: 10px 0;
+    .hamburger .bar {
+        width: 25px; 
+        height: 4px; 
+        margin: 5px 0; 
     }
 }
 
@@ -244,9 +240,20 @@ th {
     cursor: pointer;
     transition: 0.3s, transform 0.2s;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 40px;
+    right: 40px;
     border-radius: 5px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#favorite-button:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    transform-origin: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
 #favorite-button.favorited {
@@ -264,6 +271,11 @@ footer {
     padding: 10px 0;
 }
 
+footer a {
+    color: #fff; 
+    text-decoration: none; 
+}
+
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -272,13 +284,13 @@ footer {
     align-items: center;
 }
 
-.social-icons a {
+.footer-social-icons a {
     color: #fff;
     margin: 0 10px;
     font-size: 20px;
 }
 
-.social-icons a:hover {
+.footer-social-icons a:hover {
     color: #ccc;
 }
 
