@@ -17,14 +17,16 @@ header {
 .hamburger {
     display: none; 
     cursor: pointer;
-    
+    margin-left: 20px;
 }
 
 .hamburger .bar {
-    width: 25px;
-    height: 3px;
+    display: block;
+    width:2.5rem;
+    height: 2px;
+    margin-bottom: 10px;
     background-color: #fff;
-    margin: 5px 0;
+    cursor: pointer;
     transition: 0.4s;
 }
 
@@ -59,6 +61,13 @@ header {
         visibility: hidden;
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
+    
+    .menu.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        
+    }
 
     .menu li {
         margin: 0;
@@ -72,13 +81,16 @@ header {
     .hamburger {
         display: block;
     }
-}
 
-.menu.active {
-    display: flex;
-    opacity: 1;
-    visibility: visible;
-    
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons a {
+        margin: 10px 0;
+    }
 }
 
 nav {
@@ -127,6 +139,10 @@ nav {
     border-radius: 50%;
 }
 
+.profile {
+    margin-left: auto; 
+}
+
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/fleabag-poster.jpg);
     background-size: cover;
@@ -144,6 +160,12 @@ nav {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1:hover{
+    transform: scale(1.1);
 }
 
 .hero h1 a {
@@ -202,12 +224,6 @@ th {
     background-color: #f2f2f2;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
 #favorite-button {
     background-color: #fff;
     color: #333;
@@ -218,12 +234,40 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    border-radius: 5px;
 }
 
 #favorite-button.favorited {
     background-color: red;
     color: white;
+    border-radius: 5px;
     transform: scale(1.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ccc;
 }
 
 
