@@ -208,6 +208,18 @@ nav {
     margin-bottom: 10px;
 }
 
+.favorite-scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.video-container {
+    max-width: 560px; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
