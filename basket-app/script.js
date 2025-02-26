@@ -13,8 +13,13 @@ function addProduct(){
     let name = prompt("Enter the name of the product: ");
     let price = parseFloat(prompt("Enter the price of the product: "));
 
-    if (!name || isNaN(price)) {
-        alert("Invalid input. Please enter a valid name and price.");
+    if (!name || !isNaN(name)) {
+        alert("Invalid input. Please enter a valid name.");
+        return;
+    }
+
+    if(isNaN(price) || price <= 0){
+        alert("Invalid input. Please enter a valid number.");
         return;
     }
     basket.push({name: name, price: price});
@@ -30,7 +35,7 @@ function listBasket(){
 
     console.log("Basket contents:");
     basket.forEach((product, index) =>{
-        console.log(`${index+1}. ${product.name} - ${product.price} TL`);
+        console.log(`${index+1}. ${product.name} - ${product.price.toFixed(2)} TL`);
     });
 }
 
@@ -50,11 +55,17 @@ function removeProduct(){
 
 // Calculate total price
 function calculateTotalPrice(){
+    if(basket.length === 0){
+        console.log("Your basket is empty.");
+        return;
+    }
+
     let totalPrice = basket.reduce((acc, product) => acc + product.price, 0);
     console.log(`Total price: ${totalPrice.toFixed(2)} TL`);
 }
 
-while (true){
+let running = true;
+while (running){
     let choice = prompt("Welcome to the basket app!\nPlease select the action you wish to perform.\n 1- Add product\n 2- View basket\n 3- Remove product \n 4- Calculate total price\n 5- Exit");  
 
     switch(choice){
@@ -72,6 +83,7 @@ while (true){
             break;
         case "5":
             console.log("Exiting the application...");
+            running = false;
             break;
         default:
             console.log("Invalid choice. Please enter a valid option.");

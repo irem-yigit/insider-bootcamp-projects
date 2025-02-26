@@ -8,3 +8,7 @@ This repository contains all the projects completed during the Insider&Testinium
 * credit-card
 * product-card
 * series-hub
+
+### Week - 2
+* basket-app
+* collatz-sequence
