@@ -4,7 +4,7 @@ This repository contains all the projects completed during the Insider&Testinium
 ## 📜 Table of Contents
 - [About the project](#about-the-project)
 - [Technologies](#technologies)
-- [Projects](#projeler)
+- [Projects](#projects)
   - [Week 1](#week-1)
     - [register](register)
     - [credit-card](credit-card)
@@ -23,9 +23,9 @@ This repository contains all the projects completed during the Insider&Testinium
 During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend and backend development skills.
 
 ## 💻 Technologies
-- **HTML:** 
-- **CSS:**
-- **JavaScript:**
+- **HTML:** Used for user interface structure.
+- **CSS:** Used modern CSS features like Flexbox and Grid for styling and layout.
+- **JavaScript:** Used for interaction and logic. 
 
 ## 🛠 Projects
 
@@ -45,10 +45,9 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 
 To run the project, you must have the following software installed on your system:
 
-- HTML5 or later
-- CSS3 or later
-- JavaScript
+- A modern web browser (Chrome, Firefox, Edge, etc.)
 - Visual Studio Code or another IDE
+- (If using Node.js) Node.js and npm installed
 
 ### ⚙️ Installation 
 
@@ -60,8 +59,15 @@ To run the project, you must have the following software installed on your syste
 2. Go to the project directory:
    
    ```bash
-   cd week-1/register
+   cd insider-bootcamp-projects/register
    ```  
+
+3. Open `index.html` in a browser (if frontend only) or run:
+   ```bash
+   npm install   # (Only if backend dependencies exist)
+   npm start     # (For backend projects)
+   ```
+
 3. Install dependencies:
    
    ```bash
