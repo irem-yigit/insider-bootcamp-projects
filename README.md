@@ -30,14 +30,14 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 ## 🛠 Projects
 
 ### Week 1  
-- **Register:** User registration form design. [Click for details](week-1/register/README.md) 
-- **Credit Card:** Credit card back design. [Click for details](week-1/credit-card/README.md)  
-- **Product Card:** Product card design. [Click for details](week-1/product-card/README.md)  
-- **Series Hub:** Favorite series design page. [Click for details](week-1/series-hub/README.md)  
+- **Register:** User registration form design. [Click for details](register/README.md) 
+- **Credit Card:** Credit card back design. [Click for details](credit-card/README.md)  
+- **Product Card:** Product card design. [Click for details](product-card/README.md)  
+- **Series Hub:** Favorite series design page. [Click for details](series-hub/README.md)  
 
 ### Week 2  
-- **Basket App:** Basket management application. [Click for details](week-2/basket-app/README.md)  
-- **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](week-2/collatz-sequence/README.md)
+- **Basket App:** Basket management application. [Click for details](basket-app/README.md)  
+- **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](collatz-sequence/README.md)
 
 ## Getting Started 
 
