@@ -20,7 +20,7 @@ This repository contains all the projects completed during the Insider&Testinium
 - [Additional Information](#additional-information)
 
 ## 📌 About the Project
-During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend and backend development skills.
+During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend development skills.
 
 ## 💻 Technologies
 - **HTML5:** Used for user interface structure.
