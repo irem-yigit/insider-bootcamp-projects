@@ -1,4 +1,4 @@
-# Insider CodeCraft JavaScript Bootcamp Projects
+<h1 align="center"><b>Insider CodeCraft JavaScript Bootcamp Projects </b></h1>
 <a name="readme-top"></a>
 This repository contains all the projects completed during the Insider&Testinium CodeCraft JavaScript bootcamp organized by Insider. 
 
