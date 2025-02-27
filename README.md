@@ -23,9 +23,9 @@ This repository contains all the projects completed during the Insider&Testinium
 During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend and backend development skills.
 
 ## 💻 Technologies
-- **HTML:** Used for user interface structure.
-- **CSS:** Used modern CSS features like Flexbox and Grid for styling and layout.
-- **JavaScript:** Used for interaction and logic. 
+- **HTML5:** Used for user interface structure.
+- **CSS3:** Used modern CSS features like Flexbox and Grid for styling and layout.
+- **JavaScript (ES6+):** Used for interaction and logic. 
 
 ## 🛠 Projects
 
@@ -80,11 +80,11 @@ To run the project, you must have the following software installed on your syste
 ### Register Form  
 ![Register Form](week-1/register/screenshot.png)  
 
-## Additional Information
+## 📢 Additional Information
 
 - **About Bootcamp**: Organized by Insider and Testinium, CodeCraft JavaScript bootcamp aims to provide participants with practical experience.
 - **Contact Information**: For more information, you can visit [Insider](https://www.useinsider.com/) or [Testinium](https://testinium.com/) websites.
-- **Social Media**: 
+- **Social Media & Contact**: 
   [![Linkedin](https://img.shields.io/badge/Linkedin-000000?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/irem-yigit/)
   [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/irem-yigit)
-  
+  📧 Email: yigitiremm@gmail.com
