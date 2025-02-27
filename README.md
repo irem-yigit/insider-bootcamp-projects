@@ -62,18 +62,14 @@ To run the project, you must have the following software installed on your syste
    cd insider-bootcamp-projects/register
    ```  
 
-3. Open `index.html` in a browser (if frontend only) or run:
-   ```bash
-   npm install   # (Only if backend dependencies exist)
-   npm start     # (For backend projects)
-   ```
+3. Open `index.html` in a browser (if frontend only) 
 
-3. Install dependencies:
+4. Install dependencies (if backend dependencies exist):
    
    ```bash
    npm install
    ```  
-4. Run the project:
+5. Run the project (For backend projects):
    
    ```bash
    npm start
