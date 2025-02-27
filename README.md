@@ -16,7 +16,8 @@ This repository contains all the projects completed during the Insider&Testinium
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
-- [Kaynaklar](#kaynaklar)
+- [Screenshots](#screenshots)
+- [Additional Information](#additional-information)
 
 ## 📌 About the Project
 During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend and backend development skills.
@@ -35,10 +36,21 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 - **Series Hub:** Favorite series design page. [Click for details](week-1/series-hub/README.md)  
 
 ### Week 2  
-- **Basket App:** Basket management application. [Detaylar için tıklayın](week-2/basket-app/README.md)  
-- **Collatz Sequence:** Application that calculates the Collatz algorithm. [Detaylar için tıklayın](week-2/collatz-sequence/README.md)  
+- **Basket App:** Basket management application. [Click for details](week-2/basket-app/README.md)  
+- **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](week-2/collatz-sequence/README.md)
 
-## ⚙️ Installation 
+## Getting Started 
+
+### Requirements
+
+To run the project, you must have the following software installed on your system:
+
+- HTML5 or later
+- CSS3 or later
+- JavaScript
+- Visual Studio Code or another IDE
+
+### ⚙️ Installation 
 
 1. Clone the project:
    
@@ -62,13 +74,15 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
    ```  
 
 ## 📷 Screenshots
+
 ### Register Form  
 ![Register Form](week-1/register/screenshot.png)  
 
 ## Additional Information
+
 - **About Bootcamp**: Organized by Insider and Testinium, CodeCraft JavaScript bootcamp aims to provide participants with practical experience.
 - **Contact Information**: For more information, you can visit [Insider](https://www.useinsider.com/) or [Testinium](https://testinium.com/) websites.
-- **Sosyal Medya**: 
+- **Social Media**: 
   [![Linkedin](https://img.shields.io/badge/Linkedin-000000?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/irem-yigit/)
   [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/irem-yigit)
   
