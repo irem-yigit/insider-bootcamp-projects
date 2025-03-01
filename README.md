@@ -1,4 +1,5 @@
 # Insider CodeCraft JavaScript Bootcamp Projects
+<a name="readme-top"></a>
 This repository contains all the projects completed during the Insider&Testinium CodeCraft JavaScript bootcamp organized by Insider. 
 
 ## 📜 Table of Contents
@@ -39,6 +40,8 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 - **Basket App:** Basket management application. [Click for details](basket-app/README.md)  
 - **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](collatz-sequence/README.md)
 
+<p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
+
 ## Getting Started 
 
 ### Requirements
@@ -74,6 +77,8 @@ To run the project, you must have the following software installed on your syste
    ```bash
    npm start
    ```  
+
+<p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## 📷 Screenshots
 
