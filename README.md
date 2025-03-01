@@ -64,7 +64,7 @@ To run the project, you must have the following software installed on your syste
 2. Go to the project directory:
    
    ```bash
-   cd insider-bootcamp-projects/register
+   cd insider-bootcamp-projects
    ```  
 
 3. Open `index.html` in a browser (if frontend only) 
