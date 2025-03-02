@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #7b5cf6;
+    background: none;
     text-align: center;
     background-image: url('assets/image.png'); 
     background-size: cover;  
@@ -9,8 +8,6 @@ body {
 }
 
 body, button, input, select, textarea {
-    color: var(--ds-text, #172b4d);
-    font-display: swap;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -52,12 +49,11 @@ input, textarea, button {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    scrollbar-color: #fff6 #00000026;
-    scrollbar-width: auto;
 }
 
 .task-column {
-    width: 100%;
+    flex: 1;
+    min-width: 250px;
 }
 
 .task-card {
@@ -104,6 +100,11 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
     .button-container {
         justify-content: center; 
     }
