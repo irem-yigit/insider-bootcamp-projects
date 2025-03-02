@@ -19,7 +19,6 @@ This repository contains all the projects completed during the Insider&Testinium
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
-- [Screenshots](#screenshots)
 - [Additional Information](#additional-information)
 
 ## 📌 About the Project
@@ -83,11 +82,6 @@ To run the project, you must have the following software installed on your syste
    ```  
 
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
-
-## 📷 Screenshots
-
-### Register Form  
-![Register Form](week-1/register/screenshot.png)  
 
 ## 📢 Additional Information
 
