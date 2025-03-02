@@ -15,6 +15,7 @@ This repository contains all the projects completed during the Insider&Testinium
     - [basket-app](basket-app)
     - [collatz-sequence](collatz-sequence)
     - [countdown-timer](countdown-timer)
+    - [task-manager](task-manager)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -41,6 +42,7 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 - **Basket App:** Basket management application. [Click for details](basket-app/README.md)  
 - **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](collatz-sequence/README.md)
 - **Countdown Timer:** Countdown timer application. [Click for details](countdown-timer/README.md)
+- **Task Manager:** Task management application. [Click for details](task-manager/README.md)
 
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
