@@ -16,14 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const description = document.getElementById("task-desc").value.trim();
             const priority = document.querySelector("input[name='priority']:checked");
 
-            if (!title) {
-                alert ("Task title is required!");
-                return;
-            }
-
-            if (!priority) {
-                alert ("Please select a priority!");
-                return;
+            if (!title || !priority) {
+                throw new Error("Please fill out all fields and select a priority!");
             }
 
             const task = {
@@ -39,55 +33,89 @@ document.addEventListener("DOMContentLoaded", function() {
             taskForm.reset();    
         } catch (error) {
             console.error("An error occurred: ", error);
-            alert("An unexpected error occurred. Please try again.");
-            return;
+            alert(errorMessage.textContent || "An unexpected error occurred. Please try again.");
         }
     });
 
     function renderTasks(filterCompleted = false) {
-        taskList.innerHTML = "";
+        try {
 
-        let filteredTasks = [...tasks];
+            if (!taskList){
+                throw new Error("Task list container not found!");
+            } 
 
-        if (filterCompleted) {
-            filteredTasks = filteredTasks.filter(task => task.completed);
-        }
+            taskList.innerHTML = "";
 
-        filteredTasks.forEach(task => {
-            const taskCard = document.createElement("div");
-            taskCard.classList.add("task-card");
-            taskCard.dataset.id = task.id;
+            let filteredTasks = [...tasks];
 
-            if (task.completed) {
-                taskCard.classList.add("completed");
+            if (filterCompleted) {
+                filteredTasks = filteredTasks.filter(task => task.completed);
             }
 
-            taskCard.innerHTML = `
-                <h3>${task.title}</h3>
-                <p>${task.description}</p>
-                <p>Priority: <strong>${task.priority}</strong></p>
-                <button class="complete-btn">${task.completed ? "Undo" : "Complete"}</button>
-                <button class="delete-btn">Delete</button>
-            `;
+            filteredTasks.forEach(task => {
+                const taskCard = document.createElement("div");
+                taskCard.classList.add("task-card");
+                taskCard.dataset.id = task.id;
 
-            taskList.appendChild(taskCard);
-        });
+                if (task.completed) {
+                    taskCard.classList.add("completed");
+                }
+
+                taskCard.innerHTML = `
+                    <h3>${task.title}</h3>
+                    <p>${task.description}</p>
+                    <p>Priority: <strong>${task.priority}</strong></p>
+                    <button class="complete-btn">${task.completed ? "Undo" : "Complete"}</button>
+                    <button class="delete-btn">Delete</button>
+                `;
+
+                taskList.appendChild(taskCard);
+            });
+        } catch (error) {
+            console.error("Error in renderTasks():", error);
+            alert(errorMessage.textContent || "Error displaying tasks. Please refresh the page.");
+        }
     }
 
     taskList.addEventListener("click", function(e) {
-        if (e.target.classList.contains("complete-btn")) {  //event.target
-            e.stopPropagation();                            //stop event bubbling
-            const taskId = parseInt(e.target.parentElement.dataset.id);
-            const task = tasks.find(t => t.id === taskId);
-            task.completed = !task.completed;
-            renderTasks();
-        }
+        try {
+            if (e.target.classList.contains("complete-btn")) {  //event.target
+                e.stopPropagation();                            //stop event bubbling
+                const taskId = parseInt(e.target.parentElement.dataset.id);
 
-        if (e.target.classList.contains("delete-btn")) {    //event.target
-            e.stopPropagation();                            //stop event bubbling
-            const taskId = parseInt(e.target.parentElement.dataset.id);
-            tasks = tasks.filter(t => t.id !== taskId);
-            renderTasks();
+                if (isNaN(taskId)){
+                    throw new Error("Invalid task ID.");
+                }
+                     
+                const task = tasks.find(t => t.id === taskId);
+                
+                if (!task){
+                    throw new Error("Task not found.");
+                }
+
+                task.completed = !task.completed;
+                renderTasks();
+            }
+    
+            if (e.target.classList.contains("delete-btn")) {    //event.target
+                e.stopPropagation();                            //stop event bubbling
+                const taskId = parseInt(e.target.parentElement.dataset.id);
+
+                if (isNaN(taskId)){
+                    throw new Error("Invalid task ID.");
+                }
+
+                const initialLength = tasks.length;
+                tasks = tasks.filter(t => t.id !== taskId);
+                if (tasks.length === initialLength) {
+                    throw new Error("Task deletion failed.");
+                }
+
+                renderTasks();
+            }
+        } catch (error) {
+            console.error("Error in task event handling:", error);
+            alert(errorMessage.textContent || "An unexpected error occurred.");
         }
     });
 
@@ -96,8 +124,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     sortPriorityButton.addEventListener("click", function() {
-        const priorityOrder = { "low": 1, "medium": 2, "high": 3 };
-        tasks.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
-        renderTasks();
+        try {
+            const priorityOrder = { "low": 1, "medium": 2, "high": 3 };
+
+            tasks.sort((a, b) => {
+                if (!a.priority || !b.priority || !priorityOrder[a.priority] || !priorityOrder[b.priority]) {
+                    throw new Error("Invalid priority value.");
+                }
+                return priorityOrder[a.priority] - priorityOrder[b.priority];
+            });
+
+            renderTasks();
+        } catch (error) {
+            console.error("Sorting error:", error);
+            alert(errorMessage.textContent || "Error sorting tasks. Please check task priorities.");
+        }
     });
 });
