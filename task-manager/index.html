@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h1>Task Manager</h1>
+        <h1 class="title"><img src="assets/images/logo.png" alt="Logo" class="logo"> Task Manager</h1>
         <form id="task-form">
             <input type="text" id="task-title" placeholder="Task Title" required>
             <textarea id="task-desc" placeholder="Description (Optional)"></textarea>
@@ -18,13 +19,13 @@
                 <label><input type="radio" name="priority" value="high"> High</label>
             </div>
             <div class="button-container">
-                <button id="add-task" type="submit">Add Task</button>
+                <button id="add-task" type="submit"><i class="fas fa-plus"></i> Add Task</button>
             </div>
             <p id="error-message"></p>
         </form>
         <div class="filters">
-            <button id="filter-completed">Show Completed</button>
-            <button id="sort-priority">Sort by Priority</button>
+            <button id="filter-completed"><i class="fas fa-check"></i> Show Completed</button>
+            <button id="sort-priority"><i class="fas fa-sort"></i> Sort by Priority</button>
         </div>
         <div class="task-board">
             <div class="task-column">

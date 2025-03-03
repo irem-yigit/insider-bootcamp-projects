@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <p>${task.description}</p>
                     <p>Priority: <strong>${task.priority}</strong></p>
                     <button class="complete-btn">${task.completed ? "Undo" : "Complete"}</button>
-                    <button class="delete-btn">Delete</button>
+                    <button class="delete-btn"><i class="fas fa-trash-alt"></i></button>
                 `;
 
                 taskList.appendChild(taskCard);
