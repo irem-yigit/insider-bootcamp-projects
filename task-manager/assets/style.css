@@ -1,5 +1,4 @@
 body {
-    background: linear-gradient(135deg, #7b5cf6, #3b2fa3);
     color: #333;
     text-align: center;
     background-image: url('images/image.png'); 
@@ -16,10 +15,10 @@ body, button, input, select, textarea {
 }
 
 .container {
-    width: 60%;
+    width: 30%;
     margin: 20px auto;
-    background: white;
-    padding: 20px;
+    background: linear-gradient(135deg, #004556, #B8D9DF);
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -52,13 +51,13 @@ form {
 input, textarea, button {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    border: 1px solid #e4e4e4;
 }
 
 input, textarea {
     width: 98%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #9dafa1;
     border-radius: 8px;
     font-size: 16px;
     transition: border-color 0.3s ease-in-out;
@@ -66,7 +65,7 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-    border-color: #6e8efb;
+    border-color: #588e89;
     outline: none;
     box-shadow: 0px 0px 5px rgba(110, 142, 251, 0.5);
 }
@@ -81,6 +80,7 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    color: darkslategrey;
 }
 
 .task-column {
@@ -89,13 +89,14 @@ input:focus, textarea:focus {
 }
 
 .task-card {
-    background: white;
+    background: #ffffff;
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     transition: transform 0.2s ease-in-out;
+    color: #192f37;
 }
 
 .task-card:hover {
@@ -103,12 +104,12 @@ input:focus, textarea:focus {
 }
 
 .task-card.completed {
-    background: lightgreen;
+    background: darkseagreen;
 }
 
 button {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
-    color: white;
+    background: linear-gradient(135deg, #004556, #4897A8);
+    color:powderblue ;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -117,7 +118,7 @@ button {
 
 button:hover {
     background: linear-gradient(135deg, #5a75f1, #945de1);
-    background: #0056b3;
+    background: #0d7f83;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
