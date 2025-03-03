@@ -33,20 +33,6 @@ A simple yet efficient **task manager** built with **HTML, CSS, and JavaScript**
     │── 📄 script.js # JavaScript logic
     └── 📄 README.md # Documentation
 
-## 🔧 Setup & Usage
-
-1. **Clone the repository:**
-
-   ```git clone https://github.com/your-username/task-manager-app.git ```
-
-2. **Navigate into the project folder:**
-
-    ``` cd task-manager-app ```
-
-3. **Open index.html in your browser.**
-
-    ``` Open with Live Server (VSCode) or other ide ```
-
 
 ## 📸 Screenshots
 
