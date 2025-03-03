@@ -25,11 +25,12 @@ A simple yet efficient **task manager** built with **HTML, CSS, and JavaScript**
 
 ## 📂 Project Structure
 
-    📦 Task Manager
+    📦 Task Management App
+    │── 📂 assets/ # Styles & Images
+    │ ├── 🎨 styles.css # Stylesheet
+    │ ├── 🖼️ image.png # Background & other images
     │── 📄 index.html # Main HTML file
-    │── 📄 style.css # Stylesheet
     │── 📄 script.js # JavaScript logic
-    │── 📂 assets/ # Images & other assets
     └── 📄 README.md # Documentation
 
 ## 🔧 Setup & Usage
