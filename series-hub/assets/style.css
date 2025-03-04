@@ -90,7 +90,7 @@ header {
         margin: 5px 0; 
     }
 }
-
+/* nav */
 nav {
     display: flex;
     height: 5rem;
@@ -140,7 +140,7 @@ nav {
 .profile {
     margin-left: auto; 
 }
-
+/* hero - character*/
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/fleabag-poster.jpg);
     background-size: cover;
@@ -217,23 +217,77 @@ nav {
     margin: 0 auto; 
     text-align: center;
 }
+/* Episodes */
+.episode-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%; 
+    padding: 0 20px;
+}
 
-table {
+.episode-card {
+    display: flex;
+    flex-direction: column; 
+    width: calc(33.333% - 20px); 
+    border-radius: 8px;
+    overflow: hidden; 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    z-index: 2;
+    align-items: center; 
+}
+
+.episode-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.episode-card img {
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+    border-bottom: 2px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.episode-card-content {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: none !important; 
 }
 
-th, td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
+.episode-card-content:hover {
+    transform: scale(1.05);
+    box-shadow: none !important;
 }
 
-th {
-    background-color: #f2f2f2;
+.episode-card-content h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
 }
 
+.episode-card-content p {
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+/* Favorite Button */
 #favorite-button {
     background-color: #fff;
     color: #333;
@@ -264,7 +318,7 @@ th {
     border-radius: 5px;
     transform: scale(1.2);
 }
-
+/* Footer */
 footer {
     background-color: #333;
     color: #fff;
