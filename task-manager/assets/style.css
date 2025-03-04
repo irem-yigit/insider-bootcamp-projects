@@ -27,6 +27,10 @@ h1 {
     color: #333;
 }
 
+h2 {
+    color: #333;
+}
+
 .title {
     display: flex;
     align-items: center;
@@ -109,7 +113,7 @@ input:focus, textarea:focus {
 
 button {
     background: linear-gradient(135deg, #004556, #4897A8);
-    color:powderblue ;
+    color: #F0F8FF;
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -151,6 +155,6 @@ button:hover {
 
     #add-task {
         width: 200px;  
-        font-size: 12px;
+        font-size: 14px;
     }
 }
