@@ -24,7 +24,7 @@ This repository contains all the projects completed during the Insider&Testinium
 ## 📌 About the Project
 During this bootcamp, modern web development with HTML, CSS and JavaScript was practiced. Projects were prepared to develop frontend development skills.
 
-## 💻 Technologies
+## 🏗️ Technologies
 - **HTML5:** Used for user interface structure.
 - **CSS3:** Used modern CSS features like Flexbox and Grid for styling and layout.
 - **JavaScript (ES6+):** Used for interaction and logic. 
@@ -45,7 +45,7 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
-## Getting Started 
+## ⚙️ Getting Started 
 
 ### Requirements
 
@@ -55,7 +55,7 @@ To run the project, you must have the following software installed on your syste
 - Visual Studio Code or another IDE
 - (If using Node.js) Node.js and npm installed
 
-### ⚙️ Installation 
+### Installation 
 
 1. Clone the project:
    
