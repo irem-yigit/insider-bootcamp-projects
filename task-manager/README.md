@@ -4,13 +4,13 @@ A simple yet efficient **task manager** built with **HTML, CSS, and JavaScript**
 
 ## 🚀 Features
 
-- 📌 **Add Tasks:** Users can enter a task title, description, and priority (Low, Medium, High).
-- ✅ **Mark as Completed:** Tasks can be marked as completed (turns green).
-- ❌ **Delete Tasks:** Users can remove tasks from the list.
-- 🔍 **Filter Completed Tasks:** View only completed tasks.
-- 📊 **Sort by Priority:** Tasks can be sorted by priority.
-- ⚡ **Dynamic UI:** The task list updates instantly using **DOM Manipulation**.
-- 🔧 **Form Validation & Error Handling:** Ensures all required fields are filled correctly.
+-  **Add Tasks:** Users can enter a task title, description, and priority (Low, Medium, High).
+-  **Mark as Completed:** Tasks can be marked as completed (turns green).
+-  **Delete Tasks:** Users can remove tasks from the list.
+-  **Filter Completed Tasks:** View only completed tasks.
+-  **Sort by Priority:** Tasks can be sorted by priority.
+-  **Dynamic UI:** The task list updates instantly using **DOM Manipulation**.
+-  **Form Validation & Error Handling:** Ensures all required fields are filled correctly.
 
 ## 🎨 UI Design
 
