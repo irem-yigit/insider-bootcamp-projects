@@ -1,0 +1,18 @@
+[
+    {
+      "name": "iPhone 16 Pro 128 GB",
+      "price": 999,
+      "link": "https://www.apple.com/tr/shop/buy-iphone/iphone-16-pro/6.3-in%C3%A7-ekran-128gb-siyah-titanyum"
+    },
+    {
+      "name": "Samsung Galaxy S24",
+      "price": 1099,
+      "link": "https://www.samsung.com/tr/smartphones/galaxy-s24-ultra/buy/"
+    },
+    {
+      "name": "Google Pixel 8 Pro",
+      "price": 899,
+      "link": "https://www.amazon.com.tr/Google-Pixel-Pro-Obsidian-128/dp/B0CGVVVDXW"
+    }
+    
+  ]
