@@ -27,7 +27,8 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 ## 🏗️ Technologies
 - **HTML5:** Used for user interface structure.
 - **CSS3:** Used modern CSS features like Flexbox and Grid for styling and layout.
-- **JavaScript (ES6+):** Used for interaction and logic. 
+- **JavaScript (Vanilla):** Used for interaction and logic.
+- **JQuery:** Used for DOM manipulation, event handling, and AJAX requests.
 
 ## 🛠 Projects
 
