@@ -16,6 +16,8 @@ This repository contains all the projects completed during the Insider&Testinium
     - [collatz-sequence](collatz-sequence)
     - [countdown-timer](countdown-timer)
     - [task-manager](task-manager)
+  - [Week 3](#week-3)
+    - [todo-app](todo-app)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -43,7 +45,7 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 - **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](collatz-sequence/README.md)
 - **Countdown Timer:** Countdown timer application. [Click for details](countdown-timer/README.md)
 - **Task Manager:** Task management application. [Click for details](task-manager/README.md)
-
+- **Todo App:** Simple Todo application. [Click for details](todo-app/README.md)
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
