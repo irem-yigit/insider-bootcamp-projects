@@ -13,7 +13,6 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin-bottom: 20px;
-
 }
 
 button:hover {
@@ -25,10 +24,6 @@ button:hover {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-}
-
-.card h4 {
-    margin-top: 0;
 }
 
 .card {
@@ -48,6 +43,11 @@ button:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.card h4 {
+    margin-top: 0;
+}
+
 .card a {
     text-decoration: none;
     color: #337ab7;

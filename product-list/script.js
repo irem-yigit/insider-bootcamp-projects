@@ -21,9 +21,7 @@ $(document).ready(function() {
         error: function() {
             alert("An error occurred while loading products.");
         }
-  
       });
     });
-  
   });
   
