@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Laptop",
+      "price": 1200,
+      "link": "image3.jpg",
+      "details": "High-performance laptop, 16GB RAM, 512GB SSD."
+    },
+    {
+      "name": "Phone",
+      "price": 800,
+      "link": "image1.png",
+      "details": "Latest model smartphone, 128GB storage, dual camera."
+    },
+    {
+      "name": "Tablet",
+      "price": 500,
+      "link": "image2.png",
+      "details": "10-inch tablet, 64GB storage, long battery life."
+    }
+]

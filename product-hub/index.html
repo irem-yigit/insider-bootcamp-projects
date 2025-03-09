@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Product List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $("body").css({
+                "font-family": "Arial, sans-serif",
+                "background-color": "#f0f2f5",
+                "margin": "0",
+                "padding": "0",
+                "text-align": "center"
+            });
+
+            // Create container for products
+            let container = $("<div>").attr("id", "product-container").css({
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "center",
+                "padding": "20px",
+                "font-family": "'Arial', sans-serif",
+                "gap": "20px"
+            });
+            $("body").append(container);
+
+            // Create div for popup
+            const popup = $("<div>").attr("id", "product-popup").css({
+                "position": "fixed",
+                "top": "50%",
+                "left": "50%",
+                "transform": "translate(-50%, -50%)",
+                "background-color": "#fcfcfc",
+                "padding": "25px",
+                "border": "1px solid #ccc",
+                "box-shadow": "0 4px 8px rgba(0, 0, 0, 0.2)",
+                "display": "none",
+                "z-index": "1000",
+                "border-radius": "12px",
+                "max-width": "400px",
+                "text-align": "center"
+            });
+            $("body").append(popup);
+
+            let title = $("<h1>").text("Product List").css({
+                "text-align": "center",
+                "margin-bottom": "20px",
+                "font-family": "'Arial', sans-serif",
+                "font-size": "32px",
+                "color": "#2c3e50",
+                "margin-top": "20px"
+            })
+            $("body").prepend(title);
+
+            // Kapatma butonu oluştur ve popup içine ekle
+            let closeButton = $("<button>").text("Close").css({
+                "display": "block",
+                "margin": "20px auto 0",
+                "padding": "8px 16px",
+                "background": "#e74c3c",
+                "color": "white",
+                "border": "none",
+                "cursor": "pointer",
+                "font-size": "14px",
+                "border-radius": "5px"
+            }).click(function() {
+                $("#product-popup").fadeOut(); // Popup'ı kapat
+            });
+
+
+            // Fetching JSON data with AJAX
+            $.ajax({
+                url: "products.json",
+                dataType: "json",
+                success: function(data) {
+                    $.each(data, function(index, product) {
+                        let productDiv = $("<div>").addClass("product").css({
+                            "width": "200px",
+                            "margin": "10px",
+                            "padding": "15px",
+                            "border": "1px solid #eee",
+                            "text-align": "center",
+                            "cursor": "pointer",
+                            "transition": "transform 0.3s ease",
+                            "background-color": "#fcfcfc",  
+                            "border-radius": "8px", 
+                            "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.1)" 
+                        });
+
+                        $("<img>").attr("src", product.link).css({
+                            "max-width": "100%",
+                            "height": "auto",
+                            "transition": "opacity 0.3s ease",
+                            "border-radius": "8px"
+                        }).appendTo(productDiv);
+
+                        $("<h3>").text(product.name).css({
+                            "font-size": "18px",
+                            "margin": "10px 0",
+                        }).appendTo(productDiv);
+
+                        $("<p>").text("Price: $" + product.price).css({
+                            "font-size": "16px",
+                            "color": "#27ae60",
+                            "font-weight": "bold"
+                        }).appendTo(productDiv);
+
+                        // Animations
+                        productDiv.hover(
+                            function() {
+                                $(this).css({
+                                    "transform": "scale(1.05)",
+                                    "box-shadow": "0 4px 10px rgba(0, 0, 0, 0.2)"
+                                });  
+                            },
+                            function() {
+                                $(this).css({
+                                    "transform": "scale(1)",
+                                    "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.1)"
+                                });
+                            }
+                        );
+
+                        // Open pop-up
+                        productDiv.click(function() {
+                            $("#product-popup").html("<h3>" + product.name + "</h3><p>" + product.details + "</p>").append(closeButton).fadeIn();
+                        });
+
+                        container.append(productDiv);
+                    });
+                },
+                error: function(error) {
+                    console.error("Failed to retrieve JSON data:", error);
+                }
+            });
+
+            // Close pop-up on click outside the popup
+            $(document).click(function(event) {
+                if (!$(event.target).closest("#product-popup, .product").length) {
+                $("#product-popup").fadeOut();
+                }
+            });
+            
+            
+        });
+    </script>
+</body>
+</html>
