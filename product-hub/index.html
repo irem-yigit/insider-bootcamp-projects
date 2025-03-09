@@ -56,22 +56,6 @@
             })
             $("body").prepend(title);
 
-            // Kapatma butonu oluştur ve popup içine ekle
-            let closeButton = $("<button>").text("Close").css({
-                "display": "block",
-                "margin": "20px auto 0",
-                "padding": "8px 16px",
-                "background": "#e74c3c",
-                "color": "white",
-                "border": "none",
-                "cursor": "pointer",
-                "font-size": "14px",
-                "border-radius": "5px"
-            }).click(function() {
-                $("#product-popup").fadeOut(); // Popup'ı kapat
-            });
-
-
             // Fetching JSON data with AJAX
             $.ajax({
                 url: "products.json",
@@ -127,7 +111,29 @@
 
                         // Open pop-up
                         productDiv.click(function() {
-                            $("#product-popup").html("<h3>" + product.name + "</h3><p>" + product.details + "</p>").append(closeButton).fadeIn();
+                            $("#product-popup").empty(); 
+
+                            let closeButton = $("<button>").text("Close").css({
+                                "display": "block",
+                                "margin": "20px auto 0",
+                                "padding": "8px 16px",
+                                "background": "#e74c3c",
+                                "color": "white",
+                                "border": "none",
+                                "cursor": "pointer",
+                                "font-size": "14px",
+                                "border-radius": "5px"
+                            });
+
+                            closeButton.click(function() {
+                                $("#product-popup").fadeOut(); 
+                            });
+
+                            // Fill the popup content and add the close button
+                            $("#product-popup")
+                                .append("<h3>" + product.name + "</h3><p>" + product.details + "</p>")
+                                .append(closeButton)
+                                .fadeIn();
                         });
 
                         container.append(productDiv);
@@ -144,8 +150,6 @@
                 $("#product-popup").fadeOut();
                 }
             });
-            
-            
         });
     </script>
 </body>
