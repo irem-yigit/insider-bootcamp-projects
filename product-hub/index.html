@@ -153,6 +153,10 @@
                                 $("#product-popup").fadeOut(500);
                             });
 
+                            $("#overlay").click(function () {
+                                $("#overlay, #product-popup").fadeOut(500);
+                            });
+
                             // Fill the popup content and add the close button
                             $("#product-popup")
                                 .append("<img src='" + product.link + "' style='max-width:100%; border-radius:5px; margin-bottom:10px;'>")
