@@ -56,6 +56,19 @@
             })
             $("body").prepend(title);
 
+            // Create overlay for product popup
+            let overlay = $("<div>").attr("id", "overlay").css({
+                "position": "fixed",
+                "top": "0",
+                "left": "0",
+                "width": "100%",
+                "height": "100%",
+                "background": "rgba(0, 0, 0, 0.5)",
+                "display": "none",
+                "z-index": "999"
+            });
+            $("body").append(overlay);
+
             // Fetching JSON data with AJAX
             $.ajax({
                 url: "products.json",
@@ -112,6 +125,8 @@
                         // Open pop-up
                         productDiv.click(function() {
                             $("#product-popup").empty(); 
+                            $("#overlay").fadeIn();
+                            $("#product-popup").fadeIn();
 
                             let closeButton = $("<button>").text("Close").css({
                                 "display": "block",
@@ -126,11 +141,13 @@
                             });
 
                             closeButton.click(function() {
-                                $("#product-popup").fadeOut(); 
+                                $("#overlay").fadeOut();
+                                $("#product-popup").fadeOut();
                             });
 
                             // Fill the popup content and add the close button
                             $("#product-popup")
+                                .append("<img src='" + product.link + "' style='max-width:100%; border-radius:5px; margin-bottom:10px;'>")
                                 .append("<h3>" + product.name + "</h3><p>" + product.details + "</p>")
                                 .append(closeButton)
                                 .fadeIn();
