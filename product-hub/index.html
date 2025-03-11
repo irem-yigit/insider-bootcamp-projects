@@ -169,7 +169,7 @@
                 },
                 error: function(error) {
                     console.error("Failed to retrieve JSON data:", error);
-                    $("body").append($("<p>").text("An error occurred while loading product data."));
+                    alert("Failed to load product data. Please try again later.");
                 }
             });
 
