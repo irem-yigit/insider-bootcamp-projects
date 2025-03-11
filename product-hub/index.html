@@ -69,11 +69,19 @@
             });
             $("body").append(overlay);
 
+            let loadingMessage = $("<p>").text("Loading...").attr("id", "loading-message").css({
+                "text-align": "center",
+                "font-size": "18px",
+                "color": "#555"
+            });
+            $("#product-container").append(loadingMessage);
+
             // Fetching JSON data with AJAX
             $.ajax({
                 url: "products.json",
                 dataType: "json",
                 success: function(data) {
+                    $("#loading-message").remove();
                     $.each(data, function(index, product) {
                         let productDiv = $("<div>").addClass("product").css({
                             "width": "200px",
@@ -142,7 +150,7 @@
 
                             closeButton.click(function() {
                                 $("#overlay").fadeOut();
-                                $("#product-popup").fadeOut();
+                                $("#product-popup").fadeOut(500);
                             });
 
                             // Fill the popup content and add the close button
@@ -152,12 +160,12 @@
                                 .append(closeButton)
                                 .fadeIn();
                         });
-
                         container.append(productDiv);
                     });
                 },
                 error: function(error) {
                     console.error("Failed to retrieve JSON data:", error);
+                    $("body").append($("<p>").text("An error occurred while loading product data."));
                 }
             });
 
