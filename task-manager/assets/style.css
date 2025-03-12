@@ -17,7 +17,7 @@ body, button, input, select, textarea {
 .container {
     width: 30%;
     margin: 20px auto;
-    background: linear-gradient(135deg, #004556, #B8D9DF);
+    background: #F0F8FF;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
