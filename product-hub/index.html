@@ -161,6 +161,7 @@
                             $("#product-popup")
                                 .append("<img src='" + product.image + "' style='max-width:100%; border-radius:5px; margin-bottom:10px;'>")
                                 .append("<h3>" + product.name + "</h3><p>" + product.details + "</p>")
+                                .append("<a href='" + product.link + "' target='_blank' style='display:block; margin-top:10px; color:#3498db; text-decoration:none;'>View Product</a>")
                                 .append(closeButton)
                                 .fadeIn();
                         });
