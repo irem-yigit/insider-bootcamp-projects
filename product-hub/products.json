@@ -66,7 +66,7 @@
     {
       "id":9,
       "name": "Charger",
-      "price": 50,
+      "price": 150,
       "image":"assets/image9.png",
       "link": "https://www.apple.com/tr/shop/product/MW5M3ZM/A/usb-c-dijital-av-%C3%A7oklu-ba%C4%9Flant%C4%B1-noktas%C4%B1-adapt%C3%B6r%C3%BC?fnode=e9be69f02eb59a372a9ff508e79d529a99699fbd66041296aaf331e929c9e0ca2de53b5bdee2219ba7e977438cd0dc192862d84fdb346f8bd29263df8e2fd4673486038039833d8e4a5a191ea4a7d0ee17b2d3cd8afcfe55239eed857a15b776",
       "details": "Fast charging, 10W USB-C power adapter."
@@ -74,7 +74,7 @@
     {
       "id":10,
       "name": "Speaker",
-      "price": 75,
+      "price": 100,
       "image":"assets/image10.jpg",
       "link": "https://www.apple.com/tr/shop/buy-homepod/homepod-mini/turuncu?fnode=d4c84ddd13e401fd892587d3edd95e51afb6f633818a518ad2bdb6d6685dcdd8414fc22e9e27b8e19d98a209d6d838ed4fb2c0cc38adbcf541b7a1da3dfbd529e51f0b1ee90f0370ffaecf7cd5fd59266bb377bb03cffd8d951fca4d05c50851",
       "details": "High-quality speakers, orange color, 2x subwoofer, Bluetooth connectivity."
