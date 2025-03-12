@@ -1,20 +1,82 @@
 [
     {
+      "id": 1,
       "name": "Laptop",
       "price": 1200,
-      "link": "assets/image3.jpg",
+      "image": "assets/image1.jpg",
+      "link": "https://www.apple.com/tr/shop/buy-mac/macbook-air",
       "details": "High-performance laptop, 16GB RAM, 512GB SSD."
     },
     {
+      "id": 2,
       "name": "Phone",
       "price": 800,
-      "link": "assets/image1.png",
-      "details": "Latest model smartphone, 128GB storage, dual camera."
+      "image": "assets/image2.png",
+      "link": "https://www.apple.com/tr/iphone-16-pro/",
+      "details": "Latest model smartphone, 128 GB storage, pro camera."
     },
     {
+      "id": 3,
       "name": "Tablet",
       "price": 500,
-      "link": "assets/image2.png",
-      "details": "10-inch tablet, 64GB storage, long battery life."
-    } 
+      "image":"assets/image3.png",
+      "link": "https://www.apple.com/tr/ipad-11/",
+      "details": "11-inch tablet, 64GB storage, long battery life."
+    },
+    {
+      "id": 4,
+      "name": "Monitor",
+      "price": 1000,
+      "image": "assets/image4.jpg",
+      "link": "https://www.apple.com/tr/pro-display-xdr/",
+      "details": "32-inch monitor, Retina XDR screen, 6016 x 3384 pixel."
+    },
+    {
+      "id":5,
+      "name": "Mouse",
+      "price": 100,
+      "image":"assets/image5.png",
+      "link": "https://www.apple.com/tr/shop/product/MXK63ZE/A/magic-mouse-usb%E2%80%91c-siyah-multi-touch-y%C3%BCzey?fnode=6fd0f836abc0082198541a54dfdba30b02d3afc9b6cf7f1cc8c6125e26df77ac21ab349e0f5d1021b9af6af2196280d490afd1a2bd541b52277e57f403d964b24979c157b08f7408728e93b30550c6030e2dbad85a7fb837730633354cb665a5",
+      "details": "Professional mouse, USB-C connection, ergonomic design."
+    },
+    {
+      "id":6,
+      "name": "Keyboard",
+      "price": 200,
+      "image":"assets/image6.png",
+      "link": "https://www.apple.com/tr/shop/product/MXCL3TQ/A/magic-keyboard-usb-c-t%C3%BCrk%C3%A7e-q-klavye?fnode=272990ed629a8a7d3419dfe1411b06969354fb6939cb4f1fa8852d432f0a8fea73fa9013b5efbe227a5e2ffe7f1b7591e4e629ad90bdc25a88e04b07320d0d2bc2fb7655f73aec49c15d3035ed790b1e83edc4fde3a230080f2aea909ab4ecc7",
+      "details": "Wireless keyboard, USB-C connection, ergonomic design."
+    },
+    {
+      "id":7,
+      "name": "Headphones",
+      "price": 400,
+      "image":"assets/image7.png",
+      "link": "https://www.apple.com/tr/shop/buy-airpods/airpods-max/mavi?fnode=215747bea72cbd4d2e227865a8b4ec909e48752ed8c27b2d35426f6eb061b59af1c61919e630a97f8ae50754985600bf29ecbeeb11fcb443413325ee842ce6a7325f8562786b97f65118207a2f37c709a3dd04e946f07b80c960c6c9650835fe",
+      "details": "Noise-cancelling headphones, Bluetooth connectivity."
+    },
+    {
+      "id":8,
+      "name":"Watch",
+      "price": 350,
+      "image":"assets/image8.png",
+      "link": "4beb51ad60778971913d7f2b67d58d9056e60bbd92a3d7e88eae6d59626fadfc3a1884bf4e162cebfd12333af22bbd7438b2340b16ad300444167ae0fd7676d4cd6e8bcb9dcd2dfaf2abf14888277308013afda98899a4f0106764a30809fc25",
+      "details": "Series 6 watch, Space ink purple color, water-resistant case."
+    },
+    {
+      "id":9,
+      "name": "Charger",
+      "price": 50,
+      "image":"assets/image9.png",
+      "link": "https://www.apple.com/tr/shop/product/MW5M3ZM/A/usb-c-dijital-av-%C3%A7oklu-ba%C4%9Flant%C4%B1-noktas%C4%B1-adapt%C3%B6r%C3%BC?fnode=e9be69f02eb59a372a9ff508e79d529a99699fbd66041296aaf331e929c9e0ca2de53b5bdee2219ba7e977438cd0dc192862d84fdb346f8bd29263df8e2fd4673486038039833d8e4a5a191ea4a7d0ee17b2d3cd8afcfe55239eed857a15b776",
+      "details": "Fast charging, 10W USB-C power adapter."
+    },
+    {
+      "id":10,
+      "name": "Speaker",
+      "price": 75,
+      "image":"assets/image10.jpg",
+      "link": "6673ff3a9069a93c9654941895a685a039a7e43ec506268763791c7c94fe3d2df3b32fe90c038f96d615787e6a5902f55f5baf0048a3179551f3ce0629779b86ab74426043bffca4a42e0774d7020396ac91b673eb2d5205c7d37fda9e3d4fc5",
+      "details": "High-quality speakers, orange color, 2x subwoofer, Bluetooth connectivity."
+    }
 ]

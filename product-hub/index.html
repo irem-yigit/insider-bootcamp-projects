@@ -96,7 +96,7 @@
                             "box-shadow": "0 2px 5px rgba(0, 0, 0, 0.1)" 
                         });
 
-                        $("<img>").attr("src", product.link).css({
+                        $("<img>").attr("src", product.image).css({
                             "max-width": "100%",
                             "height": "auto",
                             "transition": "opacity 0.3s ease",
@@ -159,7 +159,7 @@
 
                             // Fill the popup content and add the close button
                             $("#product-popup")
-                                .append("<img src='" + product.link + "' style='max-width:100%; border-radius:5px; margin-bottom:10px;'>")
+                                .append("<img src='" + product.image + "' style='max-width:100%; border-radius:5px; margin-bottom:10px;'>")
                                 .append("<h3>" + product.name + "</h3><p>" + product.details + "</p>")
                                 .append(closeButton)
                                 .fadeIn();
