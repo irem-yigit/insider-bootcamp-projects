@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Laptop",
       "price": 1200,
-      "image": "assets/image1.jpg",
+      "image": "assets/image1.png",
       "link": "https://www.apple.com/tr/shop/buy-mac/macbook-air",
       "details": "High-performance laptop, 16GB RAM, 512GB SSD."
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "name": "Monitor",
       "price": 1000,
-      "image": "assets/image4.jpg",
+      "image": "assets/image4.png",
       "link": "https://www.apple.com/tr/pro-display-xdr/",
       "details": "32-inch monitor, Retina XDR screen, 6016 x 3384 pixel."
     },
@@ -75,7 +75,7 @@
       "id":10,
       "name": "Speaker",
       "price": 100,
-      "image":"assets/image10.jpg",
+      "image":"assets/image10.png",
       "link": "https://www.apple.com/tr/shop/buy-homepod/homepod-mini/turuncu?fnode=d4c84ddd13e401fd892587d3edd95e51afb6f633818a518ad2bdb6d6685dcdd8414fc22e9e27b8e19d98a209d6d838ed4fb2c0cc38adbcf541b7a1da3dfbd529e51f0b1ee90f0370ffaecf7cd5fd59266bb377bb03cffd8d951fca4d05c50851",
       "details": "High-quality speakers, orange color, 2x subwoofer, Bluetooth connectivity."
     }
