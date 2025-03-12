@@ -20,6 +20,7 @@ This repository contains all the projects completed during the Insider&Testinium
     - [todo-app](todo-app)
     - [product-list](product-list)
     - [application-form](application-form)
+    - [product-hub](product-hub)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -51,7 +52,8 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 ### Week 3
 - **Todo App:** Simple Todo application. [Click for details](todo-app/README.md)
 - **Product List:** Simple product list application. [Click for details](product-list/README.md)
-- **Application Form:** Simple application form. [Click for details](application-form//README.md)
+- **Application Form:** Simple application form. [Click for details](application-form/README.md)
+- **Product Hub:** Product list application with jQuery [Click for details](product-hub/README.md)
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
