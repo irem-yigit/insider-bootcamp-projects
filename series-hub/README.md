@@ -1,4 +1,4 @@
-# Series Hub - Fleabag     <img src="assets/images/fleabag-minimalist-posters.jpg" alt="Logo">
+# Series Hub - Fleabag     <img src="assets/images/fleabag-minimalist-posters.png" alt="Logo">
 
 This project is designed to create an introduction page for the Fleabag series. The page includes information about the main characters, episodes, and favorite scenes of the series.The project was developed using **HTML**, **CSS** and **JavaScript** and has a mobile-friendly design.
 
