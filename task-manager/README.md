@@ -19,20 +19,24 @@ A simple yet efficient **task manager** built with **HTML, CSS, and JavaScript**
 
 ## 🏗️ Technologies Used
 
-- **HTML** → Structure the content  
-- **CSS** → Styling & Layout  
+- **HTML5** → Structure the content  
+- **CSS3** → Styling & Layout  
 - **JavaScript (Vanilla)** → Functionality & DOM Manipulation  
+
+## 🔎 Requirements
+
+*   Web browser
+*   Internet connection.
 
 ## 📂 Project Structure
 
-    📦 Task Management App
+    📦 Task Manager/
     │── 📂 assets/ # Styles & Images
     │ ├── 🎨 styles.css # Stylesheet
     │ ├── 🖼️ image.png # Background & other images
     │── 📄 index.html # Main HTML file
     │── 📄 script.js # JavaScript logic
     └── 📄 README.md # Documentation
-
 
 ## 📸 Screenshots
 

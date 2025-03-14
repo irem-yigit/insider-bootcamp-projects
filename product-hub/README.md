@@ -3,6 +3,7 @@
 This project is a web application that dynamically fetches product information from a **JSON** data file and lists the products using **jQuery**. A pop-up displays detailed information when products are clicked, and various animations enhance user interaction.
 
 ## ⚡ Features
+
 - **Dynamic Product Listing:** Displays products using data from a JSON file.
 - **Popup Product Details:** Opens a detail popup when clicking on a product.
 - **Close popup:** Click outside the popup or use the close button to close it.
@@ -12,8 +13,8 @@ This project is a web application that dynamically fetches product information f
 
 ## 🏗️ Technologies Used
 
-- **HTML:** → Page structure
-- **CSS:** → Styling and animations
+- **HTML5:** → Page structure
+- **CSS3:** → Styling and animations
 - **jQuery:** → Dynamic content loading and event handling
 - **JSON:** → Storing product data
 
