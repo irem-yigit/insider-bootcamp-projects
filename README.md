@@ -21,6 +21,8 @@ This repository contains all the projects completed during the Insider&Testinium
     - [product-list](product-list)
     - [application-form](application-form)
     - [product-hub](product-hub)
+  - [Week 4](#week-4)
+    - [user-list](user-list)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -54,6 +56,9 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 - **Product List:** Simple product list application. [Click for details](product-list/README.md)
 - **Application Form:** Simple application form. [Click for details](application-form/README.md)
 - **Product Hub:** Product list application with jQuery [Click for details](product-hub/README.md)
+
+### Week 4
+- **User List:** Application that saves users to LocalStorage, lists and deletes users. [Click for details](user-list/README.md)
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
