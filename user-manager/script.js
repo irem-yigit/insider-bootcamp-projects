@@ -109,9 +109,10 @@ style.textContent = `
         margin: 10px auto;
     }
     .user-card { 
-        background: #ffffff; 
+        background:rgba(255, 255, 255, 0.1);;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(20px);
         padding: 20px;
         width: 300px;
         text-align: left;
@@ -129,24 +130,29 @@ style.textContent = `
         border-bottom: 1px solid #ddd;
     }
     .delete-button, .reload-button {
-        background-color: #f44336;
+        background-color: #dc3545;
         color: white;
-        border: none;
         padding: 5px 10px;
+        border-radius: 5px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 14px;
         cursor: pointer;
         transition: background 0.3s;
+        margin-top: 10px;
     }
     .delete-button:hover {
-        background-color: #cc0000;
+        background: #c82333;
     }
     .reload-button {
         display: block;
         margin: 10px auto;
         background: green;
+    }
+    .reload-button:hover {
+        background-color: green;
+        transform: scale(1.05);
     }
 `;
 document.head.appendChild(style);
