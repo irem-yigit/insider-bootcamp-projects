@@ -14,12 +14,18 @@ const fetchUsers = async () => {
         renderUsers(users);
     } catch (error) {
         console.error(error.message);
+        alert("Failed to fetch users. Please try again later.");
     }
 };
 
 //Render users
 const renderUsers = (users) => {
     const container = document.querySelector(appendLocation);
+
+    if (!container) {
+        console.error("Container element not found!");
+        return;
+    }
     container.innerHTML = '';
 
     users.forEach(user => {
@@ -40,7 +46,7 @@ const renderUsers = (users) => {
 // Delete user
 const deleteUser = (userId) => {
     let users = JSON.parse(localStorage.getItem('users')) || [];
-    users = users.filter(user => user.id !== userId);
+    users = users.filter(user => user.id !== parseInt(userId));
     localStorage.setItem('users', JSON.stringify(users));
     renderUsers(users);
 };
@@ -58,6 +64,12 @@ const addDeleteEventListeners = () => {
 // Show button when all users are deleted
 const observeUserList = () => {
     const container = document.querySelector(appendLocation);
+
+    if (!container) {
+        console.error("Container not found for observer.");
+        return;
+    }
+
     const observer = new MutationObserver(() => {
         if (container.children.length === 0 && !sessionStorage.getItem('buttonClicked')) {
             showFetchButton();
@@ -82,7 +94,8 @@ const showFetchButton = () => {
 // Load users at startup
 if (!localStorage.getItem('users')) {
     fetchUsers();
-} else {
+}
+else {
     renderUsers(JSON.parse(localStorage.getItem('users')));
 }
 
@@ -118,7 +131,6 @@ style.textContent = `
         text-align: left;
         transition: transform 0.2s;
         margin: 10px;
-        box-sizing: border-box;
     }
     .user-card:hover { 
         transform: scale(1.05);
