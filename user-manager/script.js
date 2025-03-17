@@ -36,7 +36,7 @@ const renderUsers = (users) => {
             <p><strong>Name:</strong> ${user.name}</p>
             <p><strong>E-mail:</strong> ${user.email}</p>
             <p><strong>Address:</strong> ${user.address.street}, ${user.address.city}</p>
-            <button class="delete-button" data-id="${user.id}">Delete</button>
+            <button class="delete-button" data-id="${user.id}"><i class="fas fa-trash"></i></button>
         `;
         container.appendChild(userElement);
     });
@@ -55,7 +55,7 @@ const deleteUser = (userId) => {
 const addDeleteEventListeners = () => {
     document.querySelectorAll('.delete-button').forEach(button => {
         button.addEventListener('click', (event) => {
-            const userId = parseInt(event.target.dataset.id);
+            const userId = event.currentTarget.dataset.id;
             deleteUser(userId);
         });
     });
@@ -120,20 +120,24 @@ style.textContent = `
         border: 1px solid #ccc;
         max-width: 300px;
         margin: 10px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
     .user-card { 
-        background:rgba(255, 255, 255, 0.1);;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(20px);
+        background:rgba(255, 255, 255, 0.15);
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
         padding: 20px;
-        width: 300px;
+        width: 320px;
         text-align: left;
-        transition: transform 0.2s;
-        margin: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        margin: 15px auto;
     }
     .user-card:hover { 
         transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     }
     .user-item {
         display: flex;
@@ -141,29 +145,52 @@ style.textContent = `
         padding: 5px;
         border-bottom: 1px solid #ddd;
     }
-    .delete-button, .reload-button {
-        background-color: #dc3545;
-        color: white;
-        padding: 5px 10px;
-        border-radius: 5px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
+    .delete-button {
+        background: none;
+        border: none;
         cursor: pointer;
-        transition: background 0.3s;
-        margin-top: 10px;
+        font-size: 18px;
+        transition: transform 0.2s, color 0.3s;
+        color: #dc3545;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;  
+        height: 40px; 
+        padding: 5px;
+        position: relative; 
+        z-index: 1;
+    }
+    .delete-button i {
+        font-size: 20px;
     }
     .delete-button:hover {
-        background: #c82333;
+        color: #c82333;
+        z-index: 2;
     }
     .reload-button {
         display: block;
-        margin: 10px auto;
-        background: green;
+        margin: 20px auto; 
+        background: linear-gradient(45deg, #28a745, #218838); 
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 150px; 
+        height: 50px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none; 
+
     }
     .reload-button:hover {
-        background-color: green;
+        background: linear-gradient(45deg, #218838, #1e7e34);
         transform: scale(1.05);
     }
 `;
