@@ -24,6 +24,7 @@ This repository contains all the projects completed during the Insider&Testinium
   - [Week 4](#week-4)
     - [user-list](user-list)
     - [shopping-cart](shopping-cart)
+    - [user-manager](user-manager)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Installation](#installation)
@@ -61,6 +62,7 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 ### Week 4
 - **User List:** Application that saves users to LocalStorage, lists and deletes users. [Click for details](user-list/README.md)
 - **Shopping Cart:**  
+- **User Manager:** 
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
