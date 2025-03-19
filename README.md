@@ -61,8 +61,8 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 
 ### Week 4
 - **User List:** Application that saves users to LocalStorage, lists and deletes users. [Click for details](user-list/README.md)
-- **Shopping Cart:**  
-- **User Manager:** 
+- **Shopping Cart:** A shopping cart application where users can add products to their cart, view the cart’s contents, remove items, and see the total price. [Click for details](shopping-cart/docs/debugging-report.md)
+- **User Manager:** An app that handles user creation, listing, editing, and deleting users. [Click for details](user-manager/README.md)
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
