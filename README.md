@@ -35,9 +35,9 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 
 ## 🏗️ Technologies
 - **HTML5:** Used for user interface structure.
-- **CSS3:** Used modern CSS features like Flexbox and Grid for styling and layout.
+- **CSS3:** Modern CSS features like Flexbox and Grid were used for styling and layout.
 - **JavaScript (Vanilla):** Used for interaction and logic.
-- **JQuery:** Used for DOM manipulation, event handling, and AJAX requests.
+- **jQuery:** Used for DOM manipulation, event handling, and AJAX requests.
 
 ## 🛠 Projects
 
@@ -49,20 +49,20 @@ During this bootcamp, modern web development with HTML, CSS and JavaScript was p
 
 ### Week 2  
 - **Basket App:** Basket management application. [Click for details](basket-app/README.md)  
-- **Collatz Sequence:** Application that calculates the Collatz algorithm. [Click for details](collatz-sequence/README.md)
+- **Collatz Sequence:** An application that computes the Collatz sequence. [Click for details](collatz-sequence/README.md)
 - **Countdown Timer:** Countdown timer application. [Click for details](countdown-timer/README.md)
 - **Task Manager:** Task management application. [Click for details](task-manager/README.md)
 
 ### Week 3
-- **Todo App:** Simple Todo application. [Click for details](todo-app/README.md)
+- **Todo App:** A simple to-do list application. [Click for details](todo-app/README.md)
 - **Product List:** Simple product list application. [Click for details](product-list/README.md)
-- **Application Form:** Simple application form. [Click for details](application-form/README.md)
+- **Application Form:** A simple job application form. [Click for details](application-form/README.md)
 - **Product Hub:** Product list application with jQuery [Click for details](product-hub/README.md)
 
 ### Week 4
 - **User List:** Application that saves users to LocalStorage, lists and deletes users. [Click for details](user-list/README.md)
-- **Shopping Cart:** A shopping cart application where users can add products to their cart, view the cart’s contents, remove items, and see the total price. [Click for details](shopping-cart/docs/debugging-report.md)
-- **User Manager:** An app that handles user creation, listing, editing, and deleting users. [Click for details](user-manager/README.md)
+- **Shopping Cart:** This project was provided with broken code as part of a debugging exercise. The goal was to identify and fix the errors while documenting the debugging process.[Click for details](shopping-cart/docs/debugging-report.md)
+- **User Manager:** A web app for fetching, displaying, and managing users with sessionStorage and localStorage support. [Click for details](user-manager/README.md)
 <p align="right"><a href="#readme-top">Back to the Top ↑ </a></p>
 
 ## ⚙️ Getting Started 
@@ -110,4 +110,4 @@ To run the project, you must have the following software installed on your syste
 - **Social Media & Contact**: 
   [![Linkedin](https://img.shields.io/badge/Linkedin-000000?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/irem-yigit/)
   [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/irem-yigit)
-  📧 Email: yigitiremm@gmail.com
+  📧 Contact via Email: yigitiremm@gmail.com
