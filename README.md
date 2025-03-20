@@ -73,7 +73,7 @@ To run the project, you must have the following software installed on your syste
 
 - A modern web browser (Chrome, Firefox, Edge, etc.)
 - Visual Studio Code or another IDE
-- (If using Node.js) Node.js and npm installed
+- (If using Node.js and a backend) Node.js and npm installed
 
 ### Installation 
 
