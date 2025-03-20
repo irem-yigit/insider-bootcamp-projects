@@ -52,8 +52,8 @@ This project includes an application that fetches user data from the **JSONPlace
 ## 📸 Screenshots
 
 ### 🔹 **User List**
-![Add Task](screenshots/user-list.png)
+![User List](screenshots/user-list.png)
 
 ### 🔹 **Reload User List**
-![Task List](screenshots/reload-button.png)
+![Reload Button](screenshots/reload-button.png)
 
