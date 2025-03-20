@@ -26,11 +26,11 @@ A simple yet efficient **task manager** built with **HTML, CSS, and JavaScript**
 ## 🔎 Requirements
 
 *   Web browser
-*   Internet connection.
+*   Internet connection
 
 ## 📂 Project Structure
 
-    📦 Task Manager/
+    📦 task-manager/
     │── 📂 assets/ # Styles & Images
     │ ├── 🎨 styles.css # Stylesheet
     │ ├── 🖼️ image.png # Background & other images

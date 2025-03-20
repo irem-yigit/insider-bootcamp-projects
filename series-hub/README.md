@@ -29,7 +29,7 @@ This project is designed to create an introduction page for the Fleabag series. 
 ## 🔎 Requirements
 
 *   Web browser
-*   Internet connection.
+*   Internet connection
 
 ## 📂 Project Structure
 
@@ -42,7 +42,7 @@ This project is designed to create an introduction page for the Fleabag series. 
     ├── 📄 index.html # Main HTML file
     └── 📄 README.md # Documentation
 
-## Usage
+## 🎯 Usage
 
 *  Use the navigation menu links to jump to different sections of the page.
 *  Tap the hamburger menu to open and close the navigation on mobile devices.
