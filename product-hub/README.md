@@ -1,4 +1,4 @@
-# Product Hub
+# 🛍️ Product Hub
 
 This project is a web application that dynamically fetches product information from a **JSON** data file and lists the products using **jQuery**. A pop-up displays detailed information when products are clicked, and various animations enhance user interaction.
 
