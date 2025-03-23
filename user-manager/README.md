@@ -31,7 +31,7 @@ This project includes an application that fetches user data from the **JSONPlace
 
 ## 📂 Project Structure
 
-    📦 User Manager/
+    📦 user-manager/
     │── 📂 assets/ # Styles & Images
     │ ├── 🖼️ image # Background & other images
     ├── 📄 index.html # Main HTML file

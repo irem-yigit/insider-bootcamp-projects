@@ -26,7 +26,7 @@ This project is a web application that dynamically fetches product information f
 
 ## 📂 Project Structure
 
-    📦 Product-Hub/
+    📦 product-hub/
     ├── 📂 assets/ # Styles & Images
     │ ├── 🖼️ image.png # Product images
     ├── 📄 index.html # Main HTML file
